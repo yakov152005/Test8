@@ -154,17 +154,17 @@ public class Main {
 		}
 		return false;
 	}
-	public static boolean isInFibonacciSequence(int A, int B, int NUMBER) {
+	public static boolean isInFibonacciSequence(int A, int B, int number) {
 		int prev1 = A;
 		int prev2 = B;
 
-		if (NUMBER == prev1 || NUMBER == prev2) {
+		if (number == prev1 || number == prev2) {
 			return true;
 		}
 
 		int current = prev1 + prev2;
-		while (current <= NUMBER) {
-			if (current == NUMBER) {
+		while (current <= number) {
+			if (current == number) {
 				return true;
 			}
 			prev1 = prev2;
